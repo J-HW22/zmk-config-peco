@@ -39,7 +39,7 @@
    &trans   &kp X    &kp M         &kp B       &kp '       &kp BSPC                &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &trans   &kp V    &kp C         &kp L       &kp Z       &kp Q
    &kp LSHFT  &trans  &kp G         &kp K       &kp P       &kp Y         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &kp SPACE      &kp       &kp RET  &trans   &kp RALT
+                          	        &kp LGUI     &kp SPACE      &trans       &kp RET  &trans   &kp RALT
                         >;
                 };
 
