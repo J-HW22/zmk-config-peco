@@ -71,10 +71,10 @@
 // |  `  |   ~   |   #   |  >  |  ]  |  \  |   
 //                    |     |            |         |  
                         bindings = <
-   &kp   &kp DLLR  &kp CARET   &kp EXCL  &kp PIPE  &kp AMPS    
-   &kp   &kp PRCNT   &kp PLUS  &kp RBRC  &kp RPAR  &kp COLON      
+   &trans   &kp DLLR  &kp CARET   &kp EXCL  &kp PIPE  &kp AMPS    
+   &trans   &kp PRCNT   &kp PLUS  &kp RBRC  &kp RPAR  &kp COLON      
    &kp GRAVE  &kp TILDE  &kp HASH  &kp GT  &kp RBKT  &kp BSLH     
-                 &trans  &trans   &kp
+                 &trans  &trans   &trans
                         >;
                 };
                   NUM_layer {
