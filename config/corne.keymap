@@ -11,44 +11,83 @@
   cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
 };
 / {
-        keymap {
+    
+    {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+};
+            
+            
+       keymap {
                 compatible = "zmk,keymap";
-                default_layer {
+                MAIN_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  J  |  W  |  R  |  A  |  F  |  
-// | CTRL |  D  |  T  |  H  |  E  |  O  |  
-// | SHFT |     |  S  |  N  |  I  |  U  |  
-//                    | GUI | SPC | HYPSHFT | 
+// |  ESC,TAB |  J  |  W  |  R  |  A  |  F  |  
+// | SPC,SHFT |  D  |  T  |  H  |  E  |  O  |  
+// | CTRL, NUMP | -,_ |  S  |  N  |  I  |  U  |  
+//             | DOT,FUNCT | CAPS,LCAPS | HYPSHFT | 
                         bindings = <
-   &kp TAB   &kp J &kp W &kp R &kp A &kp F   &none  &none  &none  &none  &none  &none
-   &kp LCTRL &kp D &kp T &kp H &kp E &kp O   &none  &none  &none  &none  &none  &none
-   &kp LSHFT &kp Z &kp S &kp N &kp I &kp U   &none  &none  &none  &none  &none  &none
-                  &mo 2 &kp SPACE &mo 1   
+   &ht ESC TAB   &kp J &kp W &kp R &kp A &kp F  
+   &ht SPC SHFT &kp D &kp T &kp H &kp E &kp O   
+   &lt 4 CTRL &ht MINUS UNDER &kp S &kp N &kp I &kp U   
+                  &lt 2 DOT &ht CAPS LCAPS &mo 1   
                         >;
                 };
-                lower_layer {
+                HYPSHFT_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  X  |  M  |  B  |  B  |  BSPC  |   
-// | CTRL |  V  |  C  |  L  |  Z  |  Q  |   
-// | SHFT |     |  G  |  K  |  P  |  Y  |  
-//                    | GUI | SPC |     |                  
+// |      |  X  |  M  |  B  |  '  |  BSPC  |   
+// |   ,  |  V  |  C  |  L  |  Z  |  Q  |   
+// |      | ENTER |  G  |  K  |  P  |  Y  |  
+//                    |     |     |     |                
                         bindings = <
-     &kp  TAB  &kp X &kp M &kp B &kp SQT &kp BSPC   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &kp V &kp C &kp L &kp Z &kp Q      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans &kp G &kp K &kp P &kp Y     &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &trans &kp X &kp M &kp B &kp SQT &kp BSPC   
+   &kp COMMA &kp V &kp C &kp L &kp Z &kp Q         
+   &trans &ENTER &kp G &kp K &kp P &kp Y
+                &trans  &trans   &trans  
                         >;
                 };
-                raise_layer {
+                FUNCT_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// | CTRL |  ALT  |  DEL  |  "  |  *  |  ?  |                               ! @ # $ % ^ & * ( ) = + - _ / ? \ | ; : ' " < . > [ { ] } ` ~
+// | TAB  |  UP   |   =   |  {  |  (  |  ;  |                               Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y 
+// | LEFT |  DOWN |  RIGHT|  <  |  [  |  /  |                               
+//                    |     |  HYPSHFT   |   @   |  
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp CTRL  &kp ALT  &kp DEL  &kp DQT  &kp STAR  &kp QMARK    
+   &kp TAB   &kp UP  &kp EQUAL  &kp LBRC  &kp LPAR   &kp SEMI      
+   &kp LEFT  &kp DOWN  &kp RIGHT  &kp LT  &kp LBKT  &kp FSLH     
+                 &trans  &mo 1   &kp AT
+                        >;
+                };
+                 FUNCT_HYPSHFT_layer {
+// -----------------------------------------------------------------------------------------
+// |     |   $   |   ^   |  !  |  |  |  &  |   
+// |     |   %   |   +   |  }  |  )  |  :  |   
+// |  `  |   ~   |   #   |  >  |  ]  |  \  |   
+//                    |     |            |         |  
+                        bindings = <
+   &kp   &kp DLLR  &kp CARET   &kp EXCL  &kp PIPE  &kp AMPS    
+   &kp   &kp PRCNT   &kp PLUS  &kp RBRC  &kp RPAR  &kp COLON      
+   &kp GRAVE  &kp TILDE  &kp HASH  &kp GT  &kp RBKT  &kp BSLH     
+                 &trans  &trans   &kp
+                        >;
+                };
+                  NUM_layer {
+// -----------------------------------------------------------------------------------------
+// |      |       |      |  N7  |  N8  |  N9  |   
+// |      |       |      |  N4  |  N5  |  N6  |   
+// |      |       |  N0  |  N1  |  N2  |  N3  |   
+//                    |     |     |     |  
+                        bindings = <
+   &none &none &none &kp KP_N7 &kp KP_N8 &kp KP_N9      
+   &none &none &none &kp KP_N4 &kp KP_N5 &kp KP_N6        
+   &none &none &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N3       
+                    &none &none &none    
                         >;
                 };
         };
