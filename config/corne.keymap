@@ -35,7 +35,7 @@
                         bindings = <
    &trans &kp X &kp M &kp B &kp SQT &kp BSPC   
    &kp COMMA &kp V &kp C &kp L &kp Z &kp Q         
-   &trans &ENTER &kp G &kp K &kp P &kp Y
+   &trans &kp ENTER &kp G &kp K &kp P &kp Y
                 &trans  &trans   &trans  
                         >;
                 };
