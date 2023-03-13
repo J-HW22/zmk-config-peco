@@ -12,7 +12,11 @@
 };
 / {    
 
- {
+ 
+
+       keymap {
+                compatible = "zmk,keymap";
+                {
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -22,9 +26,6 @@
     };
 };
 
-
-       keymap {
-                compatible = "zmk,keymap";
                 MAIN_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC,TAB |  J  |  W  |  R  |  A  |  F  |  
