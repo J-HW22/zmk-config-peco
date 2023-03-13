@@ -9,20 +9,47 @@
 &nice_view_spi {
   cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
 };
-/ {     
+/ { 
+
+  conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+
+
+    macros {
+         ZMK_MACRO(capslkshorthold,
+         bindings
+                = <&macro_press &kp CAPS>
+                , <&macro_pause_for_release>
+                , <&macro_tap_time 300>
+                , <&macro_release &kp CAPS>
+                ;
+                )
+           };
+     
+       
+       
+       
+       
+       
        keymap {
                 compatible = "zmk,keymap";
                 MAIN_layer {
+                bindings = <&capslkshorthold>;
 // -----------------------------------------------------------------------------------------
 // |  ESC,TAB |  J  |  W  |  R  |  A  |  F  |  
 // | SPC,SHFT |  D  |  T  |  H  |  E  |  O  |  
 // | CTRL, NUMP | -,_ |  S  |  N  |  I  |  U  |  
-//             | DOT,FUNCT | CAPS,LCAPS | HYPSHFT | 
+//             | DOT,FUNCT | CAPSLKMACRO | HYPSHFT | 
                         bindings = <
    &mt ESC TAB   &kp J &kp W &kp R &kp A &kp F                     &none &none &none &none &none &none
    &mt SPC LSHIFT &kp D &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
    &lt 4 LCTRL &mt MINUS UNDER &kp S &kp N &kp I &kp U             &none &none &none &none &none &none
-                  &lt 2 DOT &mt CAPS LCAPS &mo 1                &none &none &none
+                  &lt 2 DOT &capslkshorthold &mo 1                &none &none &none
                         >;
                 };
                 HYPSHFT_layer {
@@ -48,7 +75,7 @@
    &kp LCTRL  &kp LALT  &kp DEL  &kp DQT  &kp STAR  &kp QMARK         &none &none &none &none &none &none
    &kp TAB   &kp UP  &kp EQUAL  &kp LBRC  &kp LPAR   &kp SEMI         &none &none &none &none &none &none    
    &kp LEFT  &kp DOWN  &kp RIGHT  &kp LT  &kp LBKT  &kp FSLH          &none &none &none &none &none &none
-                 &trans  &mo 1   &kp AT                            &none &none &none &none &none &none
+                 &trans  &mo 1   &kp AT                            &none &none &none 
                         >;
                 };
                  FUNCT_HYPSHFT_layer {
