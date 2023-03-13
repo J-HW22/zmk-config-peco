@@ -24,7 +24,7 @@
          ZMK_MACRO(capslkshorthold,
          bindings
                 = <&macro_press &kp CAPS>
-                , <&macro_pause_for_release>
+             // , <&macro_pause_for_release>
                 , <&macro_tap_time 300>
                 , <&macro_release &kp CAPS>
                 ;
@@ -46,9 +46,9 @@
 // | CTRL, NUMP | -,_ |  S  |  N  |  I  |  U  |  
 //             | DOT,FUNCT | CAPSLKMACRO | HYPSHFT | 
                         bindings = <
-   &mt ESC TAB   &kp J &kp W &kp R &kp A &kp F                     &none &none &none &none &none &none
-   &mt SPC LSHIFT &kp D &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
-   &lt 4 LCTRL &mt MINUS UNDER &kp S &kp N &kp I &kp U             &none &none &none &none &none &none
+   &mt TAB ESC  &kp J &kp W &kp R &kp A &kp F                     &none &none &none &none &none &none
+   &mt LSHIFT SPC &kp D &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
+   &lt 4 LCTRL &mt UNDER MINUS &kp S &kp N &kp I &kp U             &none &none &none &none &none &none
                   &lt 2 DOT &capslkshorthold &mo 1                &none &none &none
                         >;
                 };
