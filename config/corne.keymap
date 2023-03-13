@@ -20,10 +20,10 @@
 // | CTRL, NUMP | -,_ |  S  |  N  |  I  |  U  |  
 //             | DOT,FUNCT | CAPS,LCAPS | HYPSHFT | 
                         bindings = <
-   &ht ESC TAB   &kp J &kp W &kp R &kp A &kp F  
-   &ht SPC LSHFT &kp D &kp T &kp H &kp E &kp O   
-   &lt 4 LCTRL &ht MINUS UNDER &kp S &kp N &kp I &kp U   
-                  &lt 2 DOT &ht CAPS LCAPS &mo 1   
+   &mt ESC TAB   &kp J &kp W &kp R &kp A &kp F  
+   &mt SPC LSHIFT &kp D &kp T &kp H &kp E &kp O   
+   &lt 4 LCTRL &mt MINUS UNDER &kp S &kp N &kp I &kp U   
+                  &lt 2 DOT &mt CAPS LCAPS &mo 1   
                         >;
                 };
                 HYPSHFT_layer {
