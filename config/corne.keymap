@@ -25,8 +25,8 @@
 //             | DOT,FUNCT | CAPS,LCAPS | HYPSHFT | 
                         bindings = <
    &ht ESC TAB   &kp J &kp W &kp R &kp A &kp F  
-   &ht SPC SHFT &kp D &kp T &kp H &kp E &kp O   
-   &lt 4 CTRL &ht MINUS UNDER &kp S &kp N &kp I &kp U   
+   &ht SPC LSHFT &kp D &kp T &kp H &kp E &kp O   
+   &lt 4 LCTRL &ht MINUS UNDER &kp S &kp N &kp I &kp U   
                   &lt 2 DOT &ht CAPS LCAPS &mo 1   
                         >;
                 };
@@ -45,12 +45,12 @@
                 };
                 FUNCT_layer {
 // -----------------------------------------------------------------------------------------
-// | CTRL |  ALT  |  DEL  |  "  |  *  |  ?  |                               ! @ # $ % ^ & * ( ) = + - _ / ? \ | ; : ' " < . > [ { ] } ` ~
-// | TAB  |  UP   |   =   |  {  |  (  |  ;  |                               Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y 
+// | CTRL |  ALT  |  DEL  |  "  |  *  |  ?  |                             
+// | TAB  |  UP   |   =   |  {  |  (  |  ;  |                              
 // | LEFT |  DOWN |  RIGHT|  <  |  [  |  /  |                               
 //                    |     |  HYPSHFT   |   @   |  
                         bindings = <
-   &kp CTRL  &kp ALT  &kp DEL  &kp DQT  &kp STAR  &kp QMARK    
+   &kp LCTRL  &kp LALT  &kp DEL  &kp DQT  &kp STAR  &kp QMARK    
    &kp TAB   &kp UP  &kp EQUAL  &kp LBRC  &kp LPAR   &kp SEMI      
    &kp LEFT  &kp DOWN  &kp RIGHT  &kp LT  &kp LBKT  &kp FSLH     
                  &trans  &mo 1   &kp AT
@@ -76,9 +76,9 @@
 // |      |       |  N0  |  N1  |  N2  |  N3  |   
 //                    |     |     |     |  
                         bindings = <
-   &none &none &none &kp KP_N7 &kp KP_N8 &kp KP_N9      
-   &none &none &none &kp KP_N4 &kp KP_N5 &kp KP_N6        
-   &none &none &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N3       
+   &none &none &none &kp N7 &kp N8 &kp N9      
+   &none &none &none &kp KP &kp N5 &kp N6        
+   &none &none &kp N0 &kp N1 &kp N2 &kp N3       
                     &none &none &none    
                         >;
                 };
