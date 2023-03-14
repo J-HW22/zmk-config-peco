@@ -85,7 +85,7 @@
 // |  `  |   ~   |   #   |  >  |  ]  |  \  |   
 //                    |     |            |         |  
                         bindings = <
-   &trans   &kp PIPE  &kp CARET   &kp EXCL  &kp AT  &kp AMPS       &none &none &none &none &none &none
+   &trans   &kp PIPE  &kp CARET   &kp EXCL  &kp AT_SIGN  &kp AMPS       &none &none &none &none &none &none
    &kp DLLR   &kp PRCNT   &kp PLUS  &kp RBRC  &kp RPAR  &kp COLON      &none &none &none &none &none &none 
    &kp GRAVE  &kp TILDE  &kp HASH  &kp GT  &kp RBKT  &kp BSLH        &none &none &none &none &none &none
                  &trans  &trans   &trans                          &none &none &none 
