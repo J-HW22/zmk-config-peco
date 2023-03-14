@@ -42,14 +42,14 @@
                 bindings = <&capslkshorthold>;
 // -----------------------------------------------------------------------------------------
 // |  ESC,TAB |  J  |  W  |  R  |  A  |  F  |  
-// | SPC,SHFT |  D  |  T  |  H  |  E  |  O  |  
-// | CTRL, NUMP | -,_ |  S  |  N  |  I  |  U  |  
-//             | DOT,FUNCT | CAPSLKMACRO | HYPSHFT | 
+// | CAPSLKMACRO |  D  |  T  |  H  |  E  |  O  |  
+// | CTRL | -,_ |  S  |  N  |  I  |  U  |  
+//             | DOT,FUNCT | SPC,SHFT | HYPSHFT | 
                         bindings = <
    &mt TAB ESC  &kp J &kp W &kp R &kp A &kp F                     &none &none &none &none &none &none
-   &mt LSHIFT SPC &kp D &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
-   &lt 4 LCTRL &mt UNDER MINUS &kp S &kp N &kp I &kp U             &none &none &none &none &none &none
-                  &lt 2 DOT &capslkshorthold &mo 1                &none &none &none
+   &capslkshorthold  &kp D &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
+   &kp LCTRL &mt UNDER MINUS &kp S &kp N &kp I &kp U             &none &none &none &none &none &none
+                  &lt 2 DOT &mt LSHIFT SPC &mo 1                &none &none &none
                         >;
                 };
                 HYPSHFT_layer {
@@ -61,10 +61,10 @@
                         bindings = <
    &trans &kp X &kp M &kp B &kp SQT &kp BSPC                   &none &none &none &none &none &none
    &kp COMMA &kp V &kp C &kp L &kp Z &kp Q                     &none &none &none &none &none &none
-   &trans &kp ENTER &kp G &kp K &kp P &kp Y                    &none &none &none &none &none &none
-                &trans  &trans   &trans                     &none &none &none 
-                        >;
-                };
+   &tog 4 &kp ENTER &kp G &kp K &kp P &kp Y                    &none &none &none &none &none &none
+   &mo 2 &trans &trans                                &none &none &none
+                   >;
+               };
                 FUNCT_layer {
 // -----------------------------------------------------------------------------------------
 // | CTRL |  ALT  |  DEL  |  "  |  *  |  ?  |                             
