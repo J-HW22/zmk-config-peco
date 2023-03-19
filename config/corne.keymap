@@ -46,9 +46,9 @@
 // | CTRL | -,WIN |  G  |  M  |  C  |  A  |  
 //             | DOT,FUNCT | SPC,SHFT | HYPSHFT | 
                         bindings = <
-   &mt TAB ESC  &kp X &kp W &kp R &kp A &kp F                     &none &none &none &none &none &none
-   &capslkshorthold  &kp D &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
-   &kp LCTRL &mt LEFT_WIN COMMA &kp S &kp N &kp I &kp U             &none &none &none &none &none &none          
+   &mt TAB ESC  &kp J &kp Q &kp D &kp L &kp F                     &none &none &none &none &none &none
+   &capslkshorthold  &kp Y &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
+   &kp LCTRL &mt LEFT_WIN COMMA &kp G &kp M &kp C &kp A             &none &none &none &none &none &none          
                   &lt 2 DOT &mt LSHIFT SPC &mo 1                &none &none &none
                         >;
                 };
@@ -59,9 +59,9 @@
 // |      | ENTER |  '  |  K  |  V  |  U  |  
 //                    |     |     |     |                
                         bindings = <
-   &tog 4 &kp Z &kp M &kp B &kp SQT &kp BSPC                   &none &none &none &none &none &none
-   &kp MINUS &kp V &kp C &kp L &kp S &kp G                     &none &none &none &none &none &none
-   &kp LCTRL &kp ENTER &kp G &kp K &kp P &kp Y                    &none &none &none &none &none &none
+   &tog 4 &kp Z &kp X &kp P &kp W &kp BSPC                   &none &none &none &none &none &none
+   &kp MINUS &kp B &kp R &kp I &kp N &kp S                     &none &none &none &none &none &none
+   &kp LCTRL &kp ENTER &kp SQT &kp K &kp V &kp U                    &none &none &none &none &none &none
    &mo 2 &trans &trans                                &none &none &none
                    >;
                };
@@ -101,7 +101,7 @@
    &tog 4 &kp MINUS &kp BSPC &kp N7 &kp N8 &kp N9        &none &none &none &none &none &none
    &none &kp EQUAL &kp PLUS &kp N4 &kp N5 &kp N6        &none &none &none &none &none &none
    &none &none &kp N0 &kp N1 &kp N2 &kp N3       &none &none &none &none &none &none
-                    &kp DOT &tog 4 &mo 1    J     &none &none &none 
+                    &kp DOT &tog 4 &mo 1         &none &none &none 
                         >;
                 };
         };
