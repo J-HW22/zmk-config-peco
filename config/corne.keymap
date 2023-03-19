@@ -41,26 +41,26 @@
                 MAIN_layer {
                 bindings = <&capslkshorthold>;
 // -----------------------------------------------------------------------------------------
-// |  ESC,TAB |  J  |  W  |  R  |  A  |  F  |  
-// | CAPSLKMACRO |  D  |  T  |  H  |  E  |  O  |  
-// | CTRL | -,WIN |  S  |  N  |  I  |  U  |  
+// |  ESC,TAB |  J  |  Q  |  D  |  L  |  F  |  
+// | CAPSLKMACRO |  Y  |  T  |  H  |  E  |  O  |  
+// | CTRL | -,WIN |  G  |  M  |  C  |  A  |  
 //             | DOT,FUNCT | SPC,SHFT | HYPSHFT | 
                         bindings = <
-   &mt TAB ESC  &kp J &kp W &kp R &kp A &kp F                     &none &none &none &none &none &none
+   &mt TAB ESC  &kp X &kp W &kp R &kp A &kp F                     &none &none &none &none &none &none
    &capslkshorthold  &kp D &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
-   &kp LCTRL &mt LEFT_WIN MINUS &kp S &kp N &kp I &kp U             &none &none &none &none &none &none          
+   &kp LCTRL &mt LEFT_WIN COMMA &kp S &kp N &kp I &kp U             &none &none &none &none &none &none          
                   &lt 2 DOT &mt LSHIFT SPC &mo 1                &none &none &none
                         >;
                 };
                 HYPSHFT_layer {
 // -----------------------------------------------------------------------------------------
-// |   tog4   |  X  |  M  |  B  |  '  |  BSPC  |   
-// |   ,  |  V  |  C  |  L  |  Z  |  Q  |   
-// |      | ENTER |  G  |  K  |  P  |  Y  |  
+// |   tog4   |  Z  |  X  |  P  |  W  |  BSPC  |   
+// |   ,  |  B  |  R  |  I  |  N  |   S  |   
+// |      | ENTER |  '  |  K  |  V  |  U  |  
 //                    |     |     |     |                
                         bindings = <
-   &tog 4 &kp X &kp M &kp B &kp SQT &kp BSPC                   &none &none &none &none &none &none
-   &kp COMMA &kp V &kp C &kp L &kp Z &kp Q                     &none &none &none &none &none &none
+   &tog 4 &kp Z &kp M &kp B &kp SQT &kp BSPC                   &none &none &none &none &none &none
+   &kp MINUS &kp V &kp C &kp L &kp S &kp G                     &none &none &none &none &none &none
    &kp LCTRL &kp ENTER &kp G &kp K &kp P &kp Y                    &none &none &none &none &none &none
    &mo 2 &trans &trans                                &none &none &none
                    >;
@@ -98,10 +98,10 @@
 // |      |       |  N0  |  N1  |  N2  |  N3  |   
 //                    |     |     |     |  
                         bindings = <
-   &tog 4 &none &none &kp N7 &kp N8 &kp N9        &none &none &none &none &none &none
-   &none &none &none &kp N4 &kp N5 &kp N6        &none &none &none &none &none &none
+   &tog 4 &kp MINUS &kp BSPC &kp N7 &kp N8 &kp N9        &none &none &none &none &none &none
+   &none &kp EQUAL &kp PLUS &kp N4 &kp N5 &kp N6        &none &none &none &none &none &none
    &none &none &kp N0 &kp N1 &kp N2 &kp N3       &none &none &none &none &none &none
-                    &kp DOT &tog 4 &mo 1         &none &none &none 
+                    &kp DOT &tog 4 &mo 1    J     &none &none &none 
                         >;
                 };
         };
