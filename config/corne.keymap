@@ -21,7 +21,7 @@
             if-layers = <1 4>;
             then-layer = <5>;
     };
-
+};
 
     macros {
          ZMK_MACRO(capslkshorthold,
