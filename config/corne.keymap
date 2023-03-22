@@ -51,7 +51,7 @@
                         bindings = <
    &mt TAB ESC  &kp J &kp X &kp R &kp A &kp F                     &none &none &none &none &none &none
    &capslkshorthold  &kp D &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
-   &kp LCTRL &mt LEFT_WIN COMMA &kp S &kp N &kp I &kp U             &none &none &none &none &none &none          
+   &kp LCTRL &mt LEFT_WIN COMMA &kp S &kp W &kp M &kp U             &none &none &none &none &none &none          
                   &lt 2 DOT &mt LSHIFT SPC &mo 1                &none &none &none
                         >;
                 };
@@ -63,7 +63,7 @@
 //                    |     |     |     |                
                         bindings = <
    &tog 4 &kp Z &kp Q &kp B &kp SQT &kp BSPC                   &none &none &none &none &none &none
-   &kp MINUS &kp V &kp C &kp L &kp W &kp M                     &none &none &none &none &none &none
+   &kp MINUS &kp V &kp C &kp L &kp I &kp N                     &none &none &none &none &none &none
    &kp LCTRL &kp ENTER &kp G &kp K &kp P &kp Y                    &none &none &none &none &none &none
    &mo 2 &trans &trans                                &none &none &none
                    >;
