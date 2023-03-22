@@ -44,14 +44,14 @@
                 MAIN_layer {
                 bindings = <&capslkshorthold>;
 // -----------------------------------------------------------------------------------------
-// |  ESC,TAB |  J  |  Q  |  D  |  L  |  F  |  
+// |  ESC,TAB |  J  |  Q  |  D  |  A  |  F  |  
 // | CAPSLKMACRO |  Y  |  T  |  H  |  E  |  O  |  
-// | CTRL | -,WIN |  G  |  M  |  C  |  A  |  
+// | CTRL | -,WIN |  G  |  M  |  C  |  L  |  
 //             | DOT,FUNCT | SPC,SHFT | HYPSHFT | 
                         bindings = <
-   &mt TAB ESC  &kp J &kp Q &kp D &kp L &kp F                     &none &none &none &none &none &none
+   &mt TAB ESC  &kp J &kp Q &kp D &kp A &kp F                     &none &none &none &none &none &none
    &capslkshorthold  &kp Y &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
-   &kp LCTRL &mt LEFT_WIN COMMA &kp G &kp M &kp C &kp A             &none &none &none &none &none &none          
+   &kp LCTRL &mt LEFT_WIN COMMA &kp C &kp M &kp G &kp L             &none &none &none &none &none &none          
                   &lt 2 DOT &mt LSHIFT SPC &mo 1                &none &none &none
                         >;
                 };
@@ -110,8 +110,8 @@
                      BT_layer {
 
                         bindings = <
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp BSPC        &none &none &none &none &none &none
-   &bt BT_CLR &none  &none  &none  &none  &none         &none &none &none &none &none &none
+   &to 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp BSPC        &none &none &none &none &none &none
+   &bt BT_CLR &bt BT_SEL 0  &none  &none  &none  &none         &none &none &none &none &none &none
    &tog 4 &kp ENTER &none  &none  &none  &none        &none &none &none &none &none &none
                     &none  &trans  &trans          &none &none &none 
                         >;
