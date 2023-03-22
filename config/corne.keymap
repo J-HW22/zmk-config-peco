@@ -59,12 +59,12 @@
 // -----------------------------------------------------------------------------------------
 // |   tog4   |  Z  |  X  |  P  |  W  |  BSPC  |   
 // |   ,  |  B  |  R  |  I  |  N  |   S  |   
-// |      | ENTER |  '  |  K  |  V  |  U  |  
+// |      | ENTER |  '  |  V  |  K  |  U  |  
 //                    |     |     |     |                
                         bindings = <
    &tog 4 &kp Z &kp X &kp P &kp W &kp BSPC                   &none &none &none &none &none &none
    &kp MINUS &kp B &kp R &kp I &kp N &kp S                     &none &none &none &none &none &none
-   &kp LCTRL &kp ENTER &kp SQT &kp K &kp V &kp U                    &none &none &none &none &none &none
+   &kp LCTRL &kp ENTER &kp SQT &kp V &kp K &kp U                    &none &none &none &none &none &none
    &mo 2 &trans &trans                                &none &none &none
                    >;
                };
