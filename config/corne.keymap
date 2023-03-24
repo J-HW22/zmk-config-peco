@@ -50,8 +50,8 @@
 //             | DOT,FUNCT | SPC,SHFT | HYPSHFT | 
                         bindings = <
    &mt TAB ESC  &kp J &kp X &kp R &kp A &kp F                     &none &none &none &none &none &none
-   &capslkshorthold  &kp D &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
-   &kp LCTRL &mt LEFT_WIN COMMA &kp U &kp W &kp M &kp S             &none &none &none &none &none &none          
+   &kp COMMA  &kp D &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
+   &kp LCTRL &mt LEFT_WIN CAPS &kp U &kp W &kp M &kp S             &none &none &none &none &none &none          
                   &lt 2 DOT &mt LSHIFT SPC &mo 1                &none &none &none
                         >;
                 };
