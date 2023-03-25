@@ -51,7 +51,7 @@
                         bindings = <
    &mt TAB ESC  &kp J &kp X &kp R &kp A &kp F                     &none &none &none &none &none &none
    &kp COMMA  &kp D &kp T &kp H &kp E &kp O                    &none &none &none &none &none &none
-   &kp LCTRL &mt LEFT_WIN CAPS &kp M &kp Y &kp W &kp S             &none &none &none &none &none &none          
+   &kp LCTRL &mt LEFT_WIN CAPS &kp W &kp B &kp P &kp S             &none &none &none &none &none &none          
                   &lt 2 DOT &mt LSHIFT SPC &mo 1                &none &none &none
                         >;
                 };
@@ -62,9 +62,9 @@
 // |      | ENTER |  '  |  V  |  K  |  U  |  
 //                    |     |     |     |                
                         bindings = <
-   &tog 4 &kp Z &kp Q &kp B &kp SQT &kp BSPC                   &none &none &none &none &none &none
-   &kp MINUS &kp V &kp C &kp L &kp I &kp N                     &none &none &none &none &none &none
-   &kp LCTRL &kp ENTER &kp G &kp P &kp K &kp U                    &none &none &none &none &none &none
+   &tog 4 &kp Z &kp Q &kp M &kp SQT &kp BSPC                   &none &none &none &none &none &none
+   &kp MINUS &kp Y &kp C &kp L &kp I &kp N                     &none &none &none &none &none &none
+   &kp LCTRL &kp ENTER &kp G &kp K &kp V &kp U                    &none &none &none &none &none &none
    &mo 2 &trans &trans                                &none &none &none
                    >;
                };
